@@ -7,8 +7,6 @@ delay = 0.1
 score = 0
 high_score = 0
 
-
-
 # Creating a window screen
 wn = turtle.Screen()
 wn.title("Snake Game")
@@ -45,8 +43,6 @@ pen.goto(0, 250)
 pen.write("Score : 0 High Score : 0", align="center",
 		font=("candara", 24, "bold"))
 
-
-
 # assigning key directions
 def group():
 	if head.direction != "down":
@@ -82,8 +78,6 @@ def move():
 		x = head.xcor()
 		head.setx(x+20)
 
-
-		
 wn.listen()
 wn.onkeypress(group, "y")
 wn.onkeypress(godown, "b")
@@ -91,8 +85,6 @@ wn.onkeypress(goleft, "f")
 wn.onkeypress(goright, "j")
 
 segments = []
-
-
 
 # Main Gameplay
 while True:
